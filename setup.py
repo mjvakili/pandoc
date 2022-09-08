@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
-
 # Pip Package Manager
 # ------------------------------------------------------------------------------
 try:
-    import pip
+#    import pip
     import setuptools
 except ImportError:
-    url = "http://pip.readthedocs.org"
-    error = f"pip is not installed, refer to <{url}> for instructions."
-    raise ImportError(error)
+    raise ImportError("couldn't import setuptools")
+#    url = "http://pip.readthedocs.org"
+#    error = f"pip is not installed, refer to <{url}> for instructions."
+#    raise ImportError(error)
 
 # Pandoc Metadata
 # ------------------------------------------------------------------------------
